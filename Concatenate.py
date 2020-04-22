@@ -12,7 +12,6 @@ import os
 
 def encode(self, imagePath, fileBytes):
     self.progressBar.setProperty("value", 0)
-    espTrailer = [b'45',b'53',b'50',b'161',b'30']
     trailer = True
     imageBytes = []
     if "png" in imagePath:
@@ -23,18 +22,20 @@ def encode(self, imagePath, fileBytes):
         trailer = False
 
     input = open(imagePath, 'rb')
+    count = 1
     byte = input.read(1)
     while byte:
         imageBytes.append(bytes(byte))
         byte = input.read(1)
+        count += 1
     input.close()
+    print("OG IMAGE BYTES:", count)
 
-    if not trailer:
-        for byte in espTrailer:
-            imageBytes.append(bytes)
-
+    count = 0
     for byte in fileBytes:
         imageBytes.append(byte)
+        count += 1
+    print("FILE BYTES:", count)
 
     self.progressBar.setProperty("value", 100)
     return imageBytes

@@ -9,15 +9,6 @@ from PyQt5.QtCore import *
 from PIL import Image, ImageFilter, ImageDraw
 from PIL.ImageQt import ImageQt
 
-image = "stego-output.bmp"
-input = open("notes.txt", 'rb')
-byte_list = []
-byte = input.read(1)
-while byte:
-    byte_list.append(byte)
-    byte = input.read(1)
-input.close()
-
 # Define functions
 def makeEven(input):
     return (input % 2) + input - ((input % 2) * 2)
@@ -129,7 +120,6 @@ def encode(self, imagePath, byte_list):
     return ImageQt(img)
 
 def decode(self, imagePath):
-#def decode(imagePath):
     decodestart = time.time()
     print("Reading Raw Binary...")
     img = Image.open(imagePath)
