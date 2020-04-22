@@ -1,6 +1,6 @@
 # ESP - Ella's Steganography Program
 
-## Prerequsites
+## Prerequisites
 
 - [Python 3](https://www.python.org/downloads/)
 - PyQt5 `pip install PyQt5`
@@ -10,13 +10,13 @@ This program runs and has been tested on Windows 10 with Python 3.8.
 
 ## Installation
 
-After installing the prerequsities, download this repository as a zip and unzip it or simply clone it to your home computer. 
+After installing the prerequisites, download this repository as a zip and unzip it or simply clone it to your home computer. 
 
 For ease of access in running the program, ensure that [Python 3 is added to your Path variable](https://superuser.com/questions/143119/how-do-i-add-python-to-the-windows-path).
 
 ## Running the Program
 
-To run the program, double-click the ESP-2.pyw file. If you have set up your computer to open python files with a text editor by default, you may have to right-click the file and click open with > python. This should run the program. If you have troubles running the program in this manner, you can run the program by running the command `pyw ESP-2.pyw` in the console.
+To run the program, double-click the ESP-2.pyw file. If you have set up your computer to open python files with a text editor by default, you may have to right-click the file and click open with > python. This should run the program. If you have trouble running the program in this manner, you can run the program by running the command `pyw ESP-2.pyw` in the console.
 
 The usage of **pyw** versus the normal **py** simply removes the background console from appearing. 
 
@@ -64,7 +64,7 @@ If the program is able to successfully detect what kind of file was encoded, it 
 
 ## LSB - Least Significant Bit
 
-**Important**: Because of the way LSB encodes data, image compression will completely destory any data encoded in the image. Saving LSB encoded images in JPG images or any other compressed image form will corrupt and destroy the encoded data.
+**Important**: Because of the way LSB encodes data, image compression will completely destroy any data encoded in the image. Saving LSB encoded images in JPG images or any other compressed image form will corrupt and destroy the encoded data.
 
 ### Encoding Method
 
