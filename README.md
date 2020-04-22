@@ -5,6 +5,7 @@
 - [Python 3](https://www.python.org/downloads/)
 - PyQt5 `pip install PyQt5`
 - Pillow `pip install Pillow`
+- filetype `pip install filetype`
 
 This program runs and has been tested on Windows 10 with Python 3.8.
 
